@@ -1,0 +1,309 @@
+body {
+    /* margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-white);
+    transition: all 0.4s ease-in-out;
+    background-color: var(--color-primary);
+*/
+
+    background-color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-white);
+    transition: all .4s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --color-primary: #0c1536;
+    --color-secondary: #27AE60;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
+    --color-grey-6: #12181b;
+    --color-blue-1: #1143c3;
+    --background-yellow: rgb(227, 231, 109);
+    --br-sm-2: 14px;
+    --background-red: rgb(237, 18, 18);
+    --background-blue: #7294e9;
+    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+}
+
+.light-mode {
+    --color-secondary: #bfe918;
+    --color-white: #454e56;
+    --color-black: #000;
+    --color-grey0: #0f1010;
+    --color-grey-1: #0f1010;
+    --color-grey-2: #0f1010;
+    --color-grey-3: #0f1010;
+    --color-grey-4: #e8f4f4;
+    --color-grey-5: #0f1010;
+    --color-grey-6: #0f1010;
+    --br-sm-2: 14px;
+    --background-red: rgb(237, 18, 18);
+    --background-red: rgb(241, 238, 26);
+    --color-primary: rgb(59, 84, 250);
+}
+
+header {
+    height: 100%;
+}
+
+.header-content {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    color: black;
+
+}
+
+.left {
+    flex: 1.5;
+    border-radius: var(--br-sm-2);
+    height: 100%;
+    width: 68%;
+    margin-left: 4rem;
+    transition: all 0.4s ease-in-out;
+    align-items: flex-start;
+
+}
+
+.right {
+    padding-right: 18rem;
+    flex: 1;
+    align-items: center;
+    margin-top: 15vh;
+    /* margin-left: 7.6vh; */
+    color: wheat;
+}
+
+.position {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.control {
+    flex: 1;
+    padding: 1rem;
+    cursor: pointer;
+    /* background-color: var(--color-grey-4); */
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .7rem 0;
+    box-shadow: var(--box-shadow-1);
+}
+
+.active-btn {
+    cursor: pointer;
+    background-color: var(--color-secondary);
+    transition: all 0.4s ease-in-out;
+}
+.btn {
+    cursor: pointer;
+    background-color: var(--color-grey-4);
+    transition: all 0.4s ease-in-out;
+}
+.active-btn{
+    background-color: var(--color-secondary);
+}
+
+ .control {
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow-1);
+}
+/* .active {
+    display: block;
+    animation: appear 1s ease-in-out;
+    transform: translateY(0) scaleY(1);
+    @keyframes appear {
+        0%{ transform: translateY(0) scaleY(0); }
+        100%{ transform: translateY(0) scaleY(0); }
+    }
+} */
+ 
+.controls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+.control-btn {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding: 5px;
+    border-radius: 50%;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+    background-color: var(--color-grey-4);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow-1);
+}
+
+.control-menu {
+    flex: 2;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.image {
+    z-index: 1;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    transition: all .4s ease-in-out;
+    filter: grayscale(70%);
+
+    &:hover {
+        filter: grayscale(0);
+        /* transform: rotate(10def);
+        content: url("https://res.cloudinary.com/tienanh/image/upload/v1683559078/messinangcup_shfrts.jpg"); */
+    }
+}
+
+.avatar {
+    margin-top: 5vh;
+    border-radius: var(--br-sm-2);
+    height: 100%;
+    width: 100%;
+    margin-left: 4rem;
+    transition: all .4s ease-in-out;
+    padding-right: 10vh;
+}
+
+.name {
+    font-size: 3rem;
+}
+
+.name1 {
+    color: var(--background-red);
+}
+
+.intro-content {
+    margin-top: 5vh;
+}
+
+
+
+.main-btn {
+    margin-top: 5vh;
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width: 60%;
+
+    .btn-text {
+        padding: 0 2rem;
+    }
+
+    .btn-icon {
+        background-color: var(--color-secondary);
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border-radius: 50%;
+        padding: 1rem;
+        margin-left: 20px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: all .4s ease-out;
+        z-index: -1;
+    }
+
+    &:hover {
+        transition: all .4s ease-out;
+
+        &::before {
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            transform: translateX(0);
+            transition: all .4s ease-out;
+        }
+    }
+}
+
+.download {
+    color: white;
+    text-align: justify;
+    height: 5vh;
+    margin-top: 1rem;
+}
+
+.shape {
+    position: absolute;
+    z-index: -1;
+    width: 30%;
+    height: 100%;
+    clip-path: polygon(0 0, 46% 0, 79% 100%, 0 100%);
+    background-color: var(--background-red);
+    box-sizing: border-box;
+}
+
+.experience {
+    display: none;
+}
+
+.about-me {
+    display: none;
+}
+
+.project {
+    display: none;
+}
+
+.contact-me {
+    display: none;
+}
+.selector-pointer {
+    background-color: purple;
+}
